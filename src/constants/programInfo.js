@@ -116,7 +116,7 @@ export const threeStepCardText = {
   step3: `You'll be on your way to an exciting career in tech as part of ${schoolName}'s powerful network.`,
 }
 
-export const netlifyFormName = "fullstackusd_contact"
+export const netlifyFormName = "fullstacklsu_contact"
 
 export const GATracking = "UA-68312423-1"
 
