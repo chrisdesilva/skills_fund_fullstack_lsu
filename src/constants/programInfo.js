@@ -95,7 +95,7 @@ export const schoolLogo = logo // go to header.js if height needs adjustment
 
 export const schoolName = "LSU Bootcamp"
 
-export const schoolURL = "https://pce.sandiego.edu/" // update with url of school's website
+export const schoolURL = "https://bootcamp.online.lsu.edu/" // update with url of school's website
 
 export const skfURL = "https://lsubootcamp.skills.fund" // update with Skills Fund url
 
