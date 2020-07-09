@@ -133,13 +133,19 @@ export const faq = {
   // max loan amounts by program for faq1
   loanRange: [
     {
-      programName: "LSU Cyber Bootcamp",
+      programName: "LSU Cyber Bootcamp - Part Time",
       maxAmount: "$11,910",
       col: false,
       colAmount: "$6,000",
     },
     {
-      programName: "LSU Coding Bootcamp",
+      programName: "LSU Cyber Bootcamp - Full Time",
+      maxAmount: "$11,910",
+      col: false,
+      colAmount: "$6,000",
+    },
+    {
+      programName: "LSU Coding Bootcamp - Part Time",
       maxAmount: "$11,910",
       col: false,
       colAmount: "$6,000",
@@ -199,8 +205,8 @@ export const moreThanSixPrograms = false // set to true if there are 7 or more p
 export const programLoanInfo = [
   // update with program names and corresponding loan URLs with market segment code from Master Loan Parameters
   {
-    name: "Cyber Bootcamp",
-    url: "https://my.skills.fund/application?lenderCode=SKFSLCOPT19",
+    name: "Cyber Bootcamp - Part Time",
+    url: "https://my.skills.fund/application?lenderCode=SKFSLCYPT19",
     loanInfo: {
       // match loanInfo in first metro below
       maxLoanAmt: 11910,
@@ -267,8 +273,76 @@ export const programLoanInfo = [
     ],
   },
   {
-    name: "Coding Bootcamp",
-    url: "https://my.skills.fund/application?lenderCode=SKFSLCYPT19",
+    name: "Cyber Bootcamp - Full Time",
+    url: "https://my.skills.fund/application?lenderCode=SKFSLCYFT20",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 11910,
+      loanTerm36: true,
+      loanTerm60: true,
+      "Interest Only": {
+        // interest-only
+        k: 9,
+        apr36: 11.34,
+        apr60: 12.73,
+      },
+      "Immediate Repayment": null, // immediate repayment
+    },
+    defaultLoanType: "Interest Only", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false, // true if there are multiple metros with different tuition amounts for the same program
+    showLoanTypes: false, // true if both IR and IO are available
+    loanTypes: ["Interest Only"],
+    locations: ["Metro 1", "Metro 2", "Metro 3"],
+    metros: [
+      // list in same order as locations array above
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // // match loanInfo to Program 1 above
+          maxLoanAmt: 11910,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 9,
+            apr36: 11.34,
+            apr60: 12.73,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+      {
+        location: "Metro 2",
+        loanInfo: {
+          maxLoanAmt: 15545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 5,
+            apr36: 11.16,
+            apr60: 12.51,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+      {
+        location: "Metro 3",
+        loanInfo: {
+          maxLoanAmt: 20545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 5,
+            apr36: 11.16,
+            apr60: 12.51,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+    ],
+  },
+  {
+    name: "Coding Bootcamp - Part Time",
+    url: "https://my.skills.fund/application?lenderCode=SKFSLCOPT19",
     loanInfo: {
       // match loanInfo in first metro below
       maxLoanAmt: 11910,
